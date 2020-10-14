@@ -21,4 +21,5 @@ mvn spring-boot:run -Dspring-boot.run.arguments=--spring.application.instance_id
 
 ## Spring Cloud Bus Rabbit 
 ![Screenshot](springcloudbus.png)
+https://www.nexsoftsys.com/articles/implement-spring-cloud-bus-with-examples.html
 https://medium.com/dev-cave/spring-cloud-config-48e423446ed8

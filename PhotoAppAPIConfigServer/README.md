@@ -31,3 +31,6 @@ login.url.path=/users/login
 ### bootstrap.properties
 spring.cloud.config.uri=http://localhost:8888/
 spring.cloud.config.name=PhotoAppAPIConfigServer
+
+## Spring cloud Bus
+Adicionado dependencia bus e actuator

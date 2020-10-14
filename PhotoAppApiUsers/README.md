@@ -10,3 +10,6 @@
 1. Add Eureka cliente, spring web e devtools
 2. No main anotação para habilitar eureka cliente
 3. arquivo properties
+
+## Spring Cloud Bus
+Adicionado dependencia
