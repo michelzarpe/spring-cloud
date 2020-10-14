@@ -37,9 +37,13 @@ mvn spring-boot:run -Dspring-boot.run.arguments=--spring.application.instance_id
 ### Conectando Mensageria de configuracoes
 -> Users, AccountManagement, ConfigServer, ZuulAPI
 
+
 spring.rabbitmq.host=localhost 
+
 spring.rabbitmq.port=5672 
+
 spring.rabbitmq.username=guest 
+
 spring.rabbitmq.password=guest 
 
 
