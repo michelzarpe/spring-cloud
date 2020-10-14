@@ -34,5 +34,13 @@ mvn spring-boot:run -Dspring-boot.run.arguments=--spring.application.instance_id
 10. sudo rabbitmqctl set_permissions -p / usuario "." "." "."
 
 
+### Conectando Mensageria de configuracoes
+-> Users, AccountManagement, ConfigServer, ZuulAPI
+spring.rabbitmq.host=localhost
+spring.rabbitmq.port=5672
+spring.rabbitmq.username=guest
+spring.rabbitmq.password=guest
+
+
 https://www.nexsoftsys.com/articles/implement-spring-cloud-bus-with-examples.html
 https://medium.com/dev-cave/spring-cloud-config-48e423446ed8
