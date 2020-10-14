@@ -20,4 +20,5 @@
 mvn spring-boot:run -Dspring-boot.run.arguments=--spring.application.instance_id=nameService
 
 ## Spring Cloud Bus Rabbit 
+![Screenshot](springcloudbus.png)
 https://medium.com/dev-cave/spring-cloud-config-48e423446ed8
