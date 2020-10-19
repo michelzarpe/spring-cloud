@@ -20,6 +20,8 @@
 mvn spring-boot:run -Dspring-boot.run.arguments=--spring.application.instance_id=nameService
 
 ## Spring Cloud Bus Rabbit 
+http://localhost:8888/actuator/bus-refresh
+
 ![Screenshot](springcloudbus.png)
 ### Comands Installation on Ubuntu
 1. sudo apt-get update
