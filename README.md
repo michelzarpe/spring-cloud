@@ -48,6 +48,12 @@ spring.rabbitmq.username=guest
 
 spring.rabbitmq.password=guest 
 
-
 https://www.nexsoftsys.com/articles/implement-spring-cloud-bus-with-examples.html
 https://medium.com/dev-cave/spring-cloud-config-48e423446ed8
+
+## Spring Boot Actuator
+1. /health - Health check
+2. /beans - Display a complete list of beans in your Microservice
+3.  diplays http trace information (by default, the last 100 http request-response exchanges)
+
+https://medium.com/@gcbrandao/monitore-sua-api-com-spring-boot-admin-e-actuator-40e73a5e50b0
