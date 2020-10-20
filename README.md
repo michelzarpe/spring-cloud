@@ -58,7 +58,8 @@ https://medium.com/dev-cave/spring-cloud-config-48e423446ed8
 
 https://medium.com/@gcbrandao/monitore-sua-api-com-spring-boot-admin-e-actuator-40e73a5e50b0
 
-Vizualizando:
-http://localhost:8011/actuator/health
-http://localhost:8011/actuator/routes
-http://localhost:8011/users-ws/actuator/mappings
+#### Vizualizando:
+
+1. http://localhost:8011/actuator/health
+2. http://localhost:8011/actuator/routes
+3. http://localhost:8011/users-ws/actuator/mappings
