@@ -57,3 +57,8 @@ https://medium.com/dev-cave/spring-cloud-config-48e423446ed8
 3.  diplays http trace information (by default, the last 100 http request-response exchanges)
 
 https://medium.com/@gcbrandao/monitore-sua-api-com-spring-boot-admin-e-actuator-40e73a5e50b0
+
+Vizualizando:
+http://localhost:8011/actuator/health
+http://localhost:8011/actuator/routes
+http://localhost:8011/users-ws/actuator/mappings
