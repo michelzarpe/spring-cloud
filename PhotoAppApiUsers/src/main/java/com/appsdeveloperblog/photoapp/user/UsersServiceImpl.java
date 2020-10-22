@@ -49,4 +49,12 @@ public class UsersServiceImpl implements UsersService {
 		return new ModelMapper().map(userEntity, UserDto.class);
 	}
 
+	@Override
+	public UserDto getUserByUserId(String userId) {
+		UserEntity userEntity = usersRepository.findByUserId(userId);
+		if(userEntity==null) throw new UsernameNotFoundException("User not Foud");
+		UserDto userDto = new ModelMapper().map(userEntity, UserDto.class);
+		return userDto;
+	}
+
 }

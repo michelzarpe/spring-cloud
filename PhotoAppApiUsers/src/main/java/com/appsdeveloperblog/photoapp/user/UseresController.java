@@ -6,9 +6,11 @@ import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -28,7 +30,6 @@ public class UseresController {
 	public String status() {
 		return "Working - Users on port "+env.getProperty("local.server.port")+" token "+env.getProperty("token.secret");
 	}
-
 	
 	/*headers adicionar accept:application/xml ou json*/
 	@PostMapping(consumes = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE},
@@ -43,4 +44,16 @@ public class UseresController {
 		return ResponseEntity.ok(returnValue);
 	}
 
+	
+	@GetMapping(value = "/{userId}",produces = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
+	public ResponseEntity<UserResponseModel> getUser(@PathVariable("userId") String userId){
+		
+			UserDto userDTO = userService.getUserByUserId(userId);
+			UserResponseModel returnValue = new ModelMapper().map(userDTO, UserResponseModel.class);
+			
+			
+		return ResponseEntity.status(HttpStatus.OK).body(returnValue);
+	}
+	
+	
 }
