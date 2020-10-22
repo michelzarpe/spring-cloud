@@ -39,7 +39,6 @@ http://localhost:8888/actuator/bus-refresh
 ### Conectando Mensageria de configuracoes
 -> Users, AccountManagement, ConfigServer, ZuulAPI
 
-
 spring.rabbitmq.host=localhost 
 
 spring.rabbitmq.port=5672 
