@@ -1,0 +1,2 @@
+## PhotoAppApiAlbums
+### application.properties
