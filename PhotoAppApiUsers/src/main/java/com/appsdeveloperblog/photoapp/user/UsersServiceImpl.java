@@ -76,7 +76,4 @@ public class UsersServiceImpl implements UsersService {
 		userDto.setAlbums(albunsServiceCliente.getAlbums(userId));
 		return userDto;
 	}
-	
-	
-
 }

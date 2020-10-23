@@ -9,6 +9,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.client.RestTemplate;
 
+import feign.Logger;
+
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients
@@ -29,5 +31,8 @@ public class PhotoAppApiUsers1Application {
 		return new RestTemplate();
 	}
 	
-	
+	@Bean
+	Logger.Level feignLoggerLover(){
+		return Logger.Level.FULL;
+	}
 }
