@@ -27,7 +27,8 @@ public class UsersServiceImpl implements UsersService {
 	@Autowired
 	private BCryptPasswordEncoder bcp;
 	@Autowired
-	private RestTemplate restTemplate;
+	AlbumsServiceClient albunsServiceCliente;
+	//private RestTemplate restTemplate;
 	@Autowired
 	Environment env;
 	
@@ -63,14 +64,16 @@ public class UsersServiceImpl implements UsersService {
 		UserEntity userEntity = usersRepository.findByUserId(userId);
 		if(userEntity==null) throw new UsernameNotFoundException("User not Foud");
 		UserDto userDto = new ModelMapper().map(userEntity, UserDto.class);
+		/*
 		String albumUrl = String.format(env.getProperty("albums.url"), userId);
 		
 		ResponseEntity<List<AlbumResponseModel>> albumsListResponse = 
 				restTemplate.exchange(albumUrl, HttpMethod.GET, null, new ParameterizedTypeReference<List<AlbumResponseModel>>() {
 				});
-
 		List<AlbumResponseModel> albumList = albumsListResponse.getBody();
-		userDto.setAlbums(albumList);
+		 */
+		
+		userDto.setAlbums(albunsServiceCliente.getAlbums(userId));
 		return userDto;
 	}
 	
