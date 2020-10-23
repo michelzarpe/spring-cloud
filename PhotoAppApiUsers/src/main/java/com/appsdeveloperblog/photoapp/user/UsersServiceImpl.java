@@ -23,14 +23,14 @@ public class UsersServiceImpl implements UsersService {
 
 	
 	@Autowired
-	UsersRepository usersRepository;
+	private UsersRepository usersRepository;
 	@Autowired
 	private BCryptPasswordEncoder bcp;
 	@Autowired
-	AlbumsServiceClient albunsServiceCliente;
+	private AlbumsServiceClient albunsServiceCliente;
 	//private RestTemplate restTemplate;
 	@Autowired
-	Environment env;
+	private Environment env;
 	
 	@Override
 	public UserDto createUser(UserDto userDetails) {
