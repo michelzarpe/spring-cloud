@@ -66,3 +66,5 @@ https://medium.com/@gcbrandao/monitore-sua-api-com-spring-boot-admin-e-actuator-
 ## Hystrix Circuit Breaker & Feign
 ![Screenshot](Hystrix_Circuit_Breaker.png)
 
+## Distributed tracing with sleuth and zipkin
+![Screenshot](Distributed_tracing_with_sleuth_and_zipkin.png)
