@@ -62,3 +62,7 @@ https://medium.com/@gcbrandao/monitore-sua-api-com-spring-boot-admin-e-actuator-
 1. http://localhost:8011/actuator/health
 2. http://localhost:8011/actuator/routes
 3. http://localhost:8011/users-ws/actuator/mappings
+
+## Hystrix Circuit Breaker & Feign
+![Screenshot](Hystrix_Circuit_Breaker.png)
+
