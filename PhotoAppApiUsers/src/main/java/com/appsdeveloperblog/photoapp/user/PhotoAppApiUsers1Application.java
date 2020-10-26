@@ -2,6 +2,7 @@ package com.appsdeveloperblog.photoapp.user;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.openfeign.EnableFeignClients;
@@ -14,6 +15,7 @@ import feign.Logger;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients
+@EnableCircuitBreaker
 public class PhotoAppApiUsers1Application {
 
 	public static void main(String[] args) {
@@ -35,4 +37,10 @@ public class PhotoAppApiUsers1Application {
 	Logger.Level feignLoggerLover(){
 		return Logger.Level.FULL;
 	}
+	
+	@Bean
+	public FeignErrorDecoder getFeignErrorDecoder() {
+		return new FeignErrorDecoder();
+	}
+	
 }
