@@ -68,6 +68,10 @@ https://medium.com/@gcbrandao/monitore-sua-api-com-spring-boot-admin-e-actuator-
 
 ## Distributed tracing with sleuth and zipkin
 ![Screenshot](Distributed_tracing_with_sleuth_and_zipkin.png)
+https://zipkin.io/pages/data_model.html
 
 ## Aggregating Log Files with ELK Stack
 ![Screenshot](ELK.png)
+0. https://www.elastic.co/downloads/
+1. http://localhost:9200
+2. http://localhost:9200/_cat/
