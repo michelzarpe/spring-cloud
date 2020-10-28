@@ -76,7 +76,7 @@ https://zipkin.io/pages/data_model.html
 1. http://localhost:9200
 2. http://localhost:9200/_cat/
 
-#<span style="color:red">**AWS**</span> 
+# <span style="color:red">AWS</span>
 ![Screenshot](componentes_da_aplicação.png)
-![Screenshot](processo_de inicializacao.png)
+![Screenshot](processo_de_inicializacao.png)
 ![Screenshot](visualizacao_aws.png)
