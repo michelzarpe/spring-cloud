@@ -1,0 +1,5 @@
+FROM openjdk:8-jdk-alpine 
+VOLUME /tmp 
+COPY UnlimitedJCEPolicyJDK8/* /usr/lib/jm/java-1.8-openjdk/jre/lib/security/
+COPY target/PhotoAppAPIConfigServer-0.0.1-SNAPSHOT.jar ConfigServer.jar 
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandon","-jar","ConfigServer.jar"]
